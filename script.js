@@ -2,10 +2,9 @@
 const addbutton = document.getElementById("add-btn");
 const displaycontact = document.querySelector(".contacts-display");
 const visibilityprofile = document.querySelector(".contact-detail");
-const profile = document.querySelector(".profile-display");
 
 // Fetch and show all contacts
-async function getContactAll() {
+async function getContactAll() { 
   try {
     const res = await fetch("https://68fb0edd94ec960660246f41.mockapi.io/details");
     const data = await res.json(); // 
